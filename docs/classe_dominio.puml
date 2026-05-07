@@ -1,0 +1,33 @@
+@startuml
+
+class Cinema {
+    idCinema
+    nome
+    cidade
+    estado
+    endereco
+    capacidade
+}
+
+class Filme {
+    idFilme
+    titulo
+    duracao
+    genero
+    diretor
+    elenco
+    classificacao
+}
+
+class Sessao {
+    idSessao
+    horarioInicio
+    horarioFim
+    sala
+    publico
+}
+
+Cinema "1" -- "0..*" Sessao : possui
+Filme "1" -- "0..*" Sessao : exibe
+
+@enduml
