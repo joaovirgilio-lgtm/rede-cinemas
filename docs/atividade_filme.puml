@@ -1,8 +1,0 @@
-@startuml
-start
-:Funcionário informa dados do filme;
-:Sistema valida informações;
-:Sistema salva filme;
-:Sistema confirma cadastro;
-stop
-@enduml
